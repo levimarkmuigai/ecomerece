@@ -1,5 +1,7 @@
 use std::net::TcpListener;
 pub mod api;
+pub mod domain;
+pub mod persistence;
 use actix_web::{App, HttpServer, dev::Server};
 
 use crate::api::route;

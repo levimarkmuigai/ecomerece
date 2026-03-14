@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 actix-web = "4.13.0"
+argon2 = { version = "0.5.3", features = ["std"] }
 askama = "0.15.4"
 dotenvy = "0.15.7"
 serde = { version ="1.0.228", features= ["derive"] }
@@ -16,4 +17,4 @@ sqlx = { version = "0.8.6", features = [
     "time",
 ]}
 tokio = { version = "1.50.0", features= ["full"] }
-uuid = "1.21.0"
+uuid = { version = "1.21.0", features = ["v4"] }
